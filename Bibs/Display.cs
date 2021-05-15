@@ -6,21 +6,35 @@ namespace Bibs
 {
     class Display
     {
-        private Display[] RGBD;
-        public Display(int length,int pixels, params int[] RGB)
-        {
-            RGBD = new Display[length];
-            for(int i = 0; i < RGB.Length; i++)
-            {
-                RGBD[i] = new Display(RGB[i], length);
-            }
+        public int size;
+        public string color;
 
-        }
-        public Display[] GetDisplays
+        public Display()
         {
-            get { return RGBD; }
+            this.size = 0;
+            this.color = null;
         }
-      
+        public Display(int Size)
+        {
+            this.size = Size;
+            this.color = null;
+        }
+        public Display(int Size, string Color)
+        {
+            this.size = Size;
+            this.color = Color;
+        }
         
+        public int getSize
+        {
+            get { return size; }
+            set { this.size = value; }
+        }
+        public string getcolor
+        {
+            get { return color; }
+            set { this.color = value; }
+        }
+
     }
 }
