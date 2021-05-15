@@ -10,12 +10,14 @@ namespace Bibs
         public string Manufacturer;
         public double Price;
         public string Owner;
+        public static string NokiaN95 = "NOKIA N95 Best phone UWU";
         public GSM()
         {
             this.Model = null;
             this.Manufacturer = null;
             this.Price = 0;
             this.Owner = null;
+          
 
         }
         public GSM(string model)
@@ -65,7 +67,10 @@ namespace Bibs
             get { return Owner; }
             set { Owner = value; }
         }
-        public static string NokiaN95 = "NOKIA N95 Best phone UWU";    
+        public string NokiaStatic()
+        {
+            return NokiaN95;
+        }
 
         public void DisInfo()
         {
