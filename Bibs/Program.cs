@@ -14,6 +14,11 @@ namespace Bibs
             instances[0] = test;
             instances[1] = Batttest;
             instances[2] = Display;
+            Console.WriteLine(Batttest.getModel);
+            Console.WriteLine(Batttest.getHoursTalk);
+            Console.WriteLine(Batttest.getHoursIdle);
+            Console.WriteLine(Display.getcolor);
+            Console.WriteLine(Display.getSize);
             test.DisInfo();
             Console.WriteLine(test.NokiaStatic());
             Console.WriteLine(test.getmanufacturer);
